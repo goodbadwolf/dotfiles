@@ -7,3 +7,6 @@ On Mac, ln seems to require absolute paths when making the softlinks.
 
 ### Oh-my-zsh
 `ln -s $PATH_TO_DOTFILES/oh-my-zsh/custom ~/.oh-my-zsh/custom`
+
+### Tmux
+`ln -s $PATH_TO_DOTFILES/tmux/tmux.conf ~/.tmux.conf`
