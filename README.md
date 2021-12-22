@@ -5,6 +5,12 @@ On Mac, ln seems to require absolute paths when making the softlinks.
 ### Alacritty
 `ln -s $PATH_TO_DOTFILES/alacritty ~/.config/alacritty`
 
+### Awesome vimrc
+`ln -s $PATH_TO_DOTFILES/awesome_vimrc/my_configs.vim ~/.vim_runtime/my_configs.vim`
+
+### Neovim
+`ln -s $PATH_TO_DOTFILES/nvim ~/.config/nvim`
+
 ### Oh-my-zsh
 `ln -s $PATH_TO_DOTFILES/oh-my-zsh/custom ~/.oh-my-zsh/custom`
 
