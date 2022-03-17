@@ -4,12 +4,13 @@ alias vi='nvim'
 alias l='ls -al'
 alias c='clear'
 
-alias brew64='arch -arm64 brew'
+if [ "$(uname)" = "Linux" ]; then
+    alias open='xdg-open'
+fi
 
 if [ "$(uname)" = "Darwin" ]; then
-    # OSX specific aliases
-    alias nproc='sysctl -n hw.logicalcpu'
-
+    alias brew64='arch -arm64 brew'
     alias mpicc64='arch -arm64 mpicc'
     alias mpirun64='arch -arm64 mpirun'
+    alias nproc='sysctl -n hw.logicalcpu'
 fi
