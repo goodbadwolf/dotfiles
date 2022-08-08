@@ -852,4 +852,19 @@
   #print_events: false
 
 font:
-    size: 14
+  size: 15
+  normal:
+    family: MesloLGL Nerd Font
+    style: Regular
+
+  bold:
+    family: MesloLGL Nerd Font
+    style: Bold
+
+  italic:
+    family: MesloLGL Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: MesloLGL Nerd Font
+    style: Bold Italic
