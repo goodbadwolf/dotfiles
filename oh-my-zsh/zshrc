@@ -74,7 +74,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
     command-not-found
     git
-    zsh-ask
 )
 
 source $ZSH/oh-my-zsh.sh
