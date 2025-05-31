@@ -3,6 +3,16 @@
 # ---------
 source /etc/profile
 
+# ---------
+# Autoload dir zsh functions
+# ---------
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+# ---------
+# Configure zsh completions
+# ---------
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
 
 # ---------
 # General PATH
