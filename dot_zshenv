@@ -1,0 +1,43 @@
+# ---------
+# Load system level profile
+# ---------
+source /etc/profile
+
+
+# ---------
+# General PATH
+# ---------
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+
+# ---------
+# fzf
+# ---------
+if [[ ! "$PATH" == */home/manish/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/manish/.fzf/bin"
+fi
+source <(fzf --zsh)
+
+
+# ---------
+# CUDA
+# ---------
+export CUDA_HOME=/usr/local/cuda
+export PATH=$CUDA_HOME/bin:$PATH
+
+# ---------
+# nvm
+# ---------
+unset PREFIX
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+
+# ---------
+# Exit if not in interactive mode
+# (Disabled)
+# ---------
+# [[ $- != *i* ]] && return
+
+
