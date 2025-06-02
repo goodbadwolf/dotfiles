@@ -23,6 +23,11 @@ zstyle ':completion:*' menu select
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # ---------
+# Rust
+# ---------
+source "$HOME/.cargo/env"
+
+# ---------
 # fzf
 # ---------
 if [[ ! "$PATH" == */home/manish/.fzf/bin* ]]; then
@@ -52,3 +57,4 @@ export NVM_DIR="$HOME/.nvm"
 # (Disabled)
 # ---------
 # [[ $- != *i* ]] && return
+#
