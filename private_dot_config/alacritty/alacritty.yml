@@ -1,0 +1,16 @@
+font:
+  size: 13
+  bold:
+    family: MesloLGL Nerd Font
+    style: Bold
+  bold_italic:
+    family: MesloLGL Nerd Font
+    style: Bold Italic
+  italic:
+    family: MesloLGL Nerd Font
+    style: Italic
+  normal:
+    family: MesloLGL Nerd Font
+    style: Regular
+scrolling:
+  history: 10000

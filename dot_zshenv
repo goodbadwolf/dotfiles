@@ -52,6 +52,12 @@ export NVM_DIR="$HOME/.nvm"
 # shellcheck source=/dev/null
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 
+# --------
+# XDG
+# --------
+export XDG_CONFIG_HOME="$HOME/.config"
+
+
 # ---------
 # Exit if not in interactive mode
 # (Disabled)
